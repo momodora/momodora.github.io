@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            new | 
+        
+        残像的博客
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="残像的博客">
+    <meta name="msapplication-starturl" content="http://www.momodora.top/2018/03/16/new/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="残像的博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.momodora.top/2018/03/16/new/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="new | 残像的博客">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 16 2018 16:14:47 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 16 2018 16:15:05 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.momodora.top/2018/03/16/new/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.momodora.top/2018/03/16/new/index.html",
+    "headline": "new",
+    "datePublished": "Fri Mar 16 2018 16:14:47 GMT+0800",
+    "dateModified": "Fri Mar 16 2018 16:15:05 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "未来de残像",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "残像的博客",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————"><span class="post-toc-number">1.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Site-Information-Settings"><span class="post-toc-number">2.</span> <span class="post-toc-text">Site Information Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Head-info"><span class="post-toc-number">4.</span> <span class="post-toc-text">Head info</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Jump-Links-Settings"><span class="post-toc-number">5.</span> <span class="post-toc-text">Jump Links Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-2"><span class="post-toc-number">6.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Style-Settings"><span class="post-toc-number">7.</span> <span class="post-toc-text">Style Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Schemes"><span class="post-toc-number">9.</span> <span class="post-toc-text">Schemes</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#UI-amp-UX-slogan-color-effect"><span class="post-toc-number">10.</span> <span class="post-toc-text">UI &amp; UX: slogan, color, effect</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JS-Effect-Switches"><span class="post-toc-number">11.</span> <span class="post-toc-text">JS Effect Switches</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Reading-experience"><span class="post-toc-number">12.</span> <span class="post-toc-text">Reading experience</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Thumbnail-Settings"><span class="post-toc-number">13.</span> <span class="post-toc-text">Thumbnail Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Background-Settings"><span class="post-toc-number">14.</span> <span class="post-toc-text">Background Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#bing-available-parameter"><span class="post-toc-number">15.</span> <span class="post-toc-text">bing available parameter:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#new-color-type"><span class="post-toc-number">16.</span> <span class="post-toc-text">new | color= | type=</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#color-available-value-black-blue-brown-green-multi-orange-pink-purple-red-white-yellow"><span class="post-toc-number">17.</span> <span class="post-toc-text">color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#type-available-value-A-animal-C-culture-N-nature-S-space-T-travel"><span class="post-toc-number">18.</span> <span class="post-toc-text">type available value: A (animal), C (culture), N (nature), S (space), T (travel)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Images-Settings"><span class="post-toc-number">19.</span> <span class="post-toc-text">Images Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Custom-Fonts"><span class="post-toc-number">20.</span> <span class="post-toc-text">Custom Fonts</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#family-the-font-family-which-will-be-used-in-the-theme"><span class="post-toc-number">21.</span> <span class="post-toc-text">family: the font-family which will be used in the theme</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#host-uri-of-fonts-host"><span class="post-toc-number">22.</span> <span class="post-toc-text">host: uri of fonts host.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value-of-“host”-google-baomitu-ustc-custom"><span class="post-toc-number">23.</span> <span class="post-toc-text">Available value of “host”: google | baomitu | ustc | custom</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Card-Elevation-Level"><span class="post-toc-number">24.</span> <span class="post-toc-text">Card Elevation Level</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Copyright"><span class="post-toc-number">25.</span> <span class="post-toc-text">Copyright</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Specify-the-date-when-the-site-was-setup"><span class="post-toc-number">26.</span> <span class="post-toc-text">Specify the date when the site was setup.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#For-example-if-you-set-it-as-2015-then-footer-will-show-‘©-2015-2017’"><span class="post-toc-number">27.</span> <span class="post-toc-text">For example, if you set it as 2015, then footer will show ‘© 2015 - 2017’</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Qrcode-for-redirect-at-other-device"><span class="post-toc-number">28.</span> <span class="post-toc-text">Qrcode for redirect at other device</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#use-choose-which-method-to-generate-the-qrcode-for-each-posts"><span class="post-toc-number">29.</span> <span class="post-toc-text">use: choose which method to generate the qrcode for each posts.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value-of-“use”-plugin-online"><span class="post-toc-number">30.</span> <span class="post-toc-text">Available value of “use”: plugin | online</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#When-use-“plugin”-you-need-to-install-the-hexo-helper-qrcode"><span class="post-toc-number">31.</span> <span class="post-toc-text">- When use “plugin”, you need to install the hexo-helper-qrcode.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#When-use-“online”-the-qrcode-will-be-generated-by-‘pan-baidu-com’-in-China"><span class="post-toc-number">32.</span> <span class="post-toc-text">- When use “online”, the qrcode will be generated by ‘pan.baidu.com’ in China.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-4"><span class="post-toc-number">33.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Menu-Settings"><span class="post-toc-number">34.</span> <span class="post-toc-text">Menu Settings</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-5"><span class="post-toc-number">35.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#TOC-Button"><span class="post-toc-number">36.</span> <span class="post-toc-text">TOC Button</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#use-choose-whether-the-line-number-of-toc-will-show-or-not"><span class="post-toc-number">37.</span> <span class="post-toc-text">use: choose whether the line_number of toc will show or not.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value-of-“linenumber”-true-false"><span class="post-toc-number">38.</span> <span class="post-toc-text">Available value of “linenumber”: true | false</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SNS-Menu"><span class="post-toc-number">39.</span> <span class="post-toc-text">SNS Menu</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SNS-Share-Switch"><span class="post-toc-number">40.</span> <span class="post-toc-text">SNS Share Switch</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Sidebar-Customize"><span class="post-toc-number">41.</span> <span class="post-toc-text">Sidebar Customize</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-6"><span class="post-toc-number">42.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Integrated-Services"><span class="post-toc-number">43.</span> <span class="post-toc-text">Integrated Services</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#—————————————————————-7"><span class="post-toc-number">44.</span> <span class="post-toc-text">—————————————————————</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MaterialCDN"><span class="post-toc-number">45.</span> <span class="post-toc-text">MaterialCDN</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#When-you-set-‘use’-as-true-the-needed-css-js-font-file-will-have-a-new-src"><span class="post-toc-number">46.</span> <span class="post-toc-text">When you set ‘use’ as true, the needed css, js, font file will have a new src.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#The-new-src-will-have-the-base-domain-you-configured-in-‘base’"><span class="post-toc-number">47.</span> <span class="post-toc-text">The new src will have the base domain you configured in ‘base’.</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Comment-Systems"><span class="post-toc-number">48.</span> <span class="post-toc-text">Comment Systems</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value-of-“use”"><span class="post-toc-number">49.</span> <span class="post-toc-text">Available value of “use”:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#disqus-disqus-click-changyan-163gentie"><span class="post-toc-number">50.</span> <span class="post-toc-text">disqus | disqus_click | changyan | 163gentie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Search-Systems"><span class="post-toc-number">51.</span> <span class="post-toc-text">Search Systems</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value"><span class="post-toc-number">52.</span> <span class="post-toc-text">Available value:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#swiftype-google-local"><span class="post-toc-number">53.</span> <span class="post-toc-text">swiftype | google | local</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Analytics-Systems"><span class="post-toc-number">54.</span> <span class="post-toc-text">Analytics Systems</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Available-value-1"><span class="post-toc-number">55.</span> <span class="post-toc-text">Available value:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#baidu-google-cnzz"><span class="post-toc-number">56.</span> <span class="post-toc-text">baidu | google | cnzz</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Leancloud-Views"><span class="post-toc-number">57.</span> <span class="post-toc-text">Leancloud Views</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Busuanzi-不蒜子-Views"><span class="post-toc-number">58.</span> <span class="post-toc-text">Busuanzi 不蒜子 Views</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                new
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>未来de残像</strong>
+        <span>3月 16, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=new&url=http://www.momodora.top/2018/03/16/new/index.html&pic=http://www.momodora.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=new&url=http://www.momodora.top/2018/03/16/new/index.html&via=未来de残像" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.momodora.top/2018/03/16/new/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://www.momodora.top/2018/03/16/new/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="—————————————————————"><a href="#—————————————————————" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h1><h1 id="—————————————————————-1"><a href="#—————————————————————-1" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Head-info"><a href="#Head-info" class="headerlink" title="Head info"></a>Head info</h1><p>head:<br>    favicon: “/img/favicon.png”<br>    high_res_favicon: “/img/favicon.png”<br>    apple_touch_icon: “/img/favicon.png”<br>    keywords:<br>    site_verification:<br>        google:<br>        baidu:</p>
+<pre><code># Enable generate structured-data as JSON+LD for SEO or not.
+#        Set as &apos;false&apos; if it cause some wrong when `hexo g`.
+structured_data: true
+</code></pre><h1 id="Jump-Links-Settings"><a href="#Jump-Links-Settings" class="headerlink" title="Jump Links Settings"></a>Jump Links Settings</h1><p>url:<br>    rss:<br>    daily_pic: “#”<br>    logo: “#”</p>
+<h1 id="—————————————————————-2"><a href="#—————————————————————-2" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Style-Settings"><a href="#Style-Settings" class="headerlink" title="Style Settings"></a>Style Settings</h1><h1 id="—————————————————————-3"><a href="#—————————————————————-3" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Schemes"><a href="#Schemes" class="headerlink" title="Schemes"></a>Schemes</h1><p>scheme: Paradox</p>
+<p>#scheme: Isolation</p>
+<h1 id="UI-amp-UX-slogan-color-effect"><a href="#UI-amp-UX-slogan-color-effect" class="headerlink" title="UI &amp; UX: slogan, color, effect"></a>UI &amp; UX: slogan, color, effect</h1><p>uiux:<br>    slogan: “Hi, nice to meet you”<br>    theme_color: “#0097A7”<br>    theme_sub_color: “#00838F”<br>    hyperlink_color: “#00838F”<br>    button_color: “#757575”<br>    android_chrome_color: “#0097A7”<br>    nprogress_color: “#29d”<br>    nprogress_buffer: “800”</p>
+<h1 id="JS-Effect-Switches"><a href="#JS-Effect-Switches" class="headerlink" title="JS Effect Switches"></a>JS Effect Switches</h1><p>js_effect:<br>    fade: true<br>    smoothscroll: false</p>
+<h1 id="Reading-experience"><a href="#Reading-experience" class="headerlink" title="Reading experience"></a>Reading experience</h1><p>reading:<br>    entry_excerpt: 80</p>
+<h1 id="Thumbnail-Settings"><a href="#Thumbnail-Settings" class="headerlink" title="Thumbnail Settings"></a>Thumbnail Settings</h1><p>thumbnail:<br>    purecolor:<br>    random_amount: 19</p>
+<h1 id="Background-Settings"><a href="#Background-Settings" class="headerlink" title="Background Settings"></a>Background Settings</h1><h1 id="bing-available-parameter"><a href="#bing-available-parameter" class="headerlink" title="bing available parameter:"></a>bing available parameter:</h1><h1 id="new-color-type"><a href="#new-color-type" class="headerlink" title="new | color= | type="></a>new | color= | type=</h1><h1 id="color-available-value-black-blue-brown-green-multi-orange-pink-purple-red-white-yellow"><a href="#color-available-value-black-blue-brown-green-multi-orange-pink-purple-red-white-yellow" class="headerlink" title="color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow"></a>color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow</h1><h1 id="type-available-value-A-animal-C-culture-N-nature-S-space-T-travel"><a href="#type-available-value-A-animal-C-culture-N-nature-S-space-T-travel" class="headerlink" title="type available value: A (animal), C (culture), N (nature), S (space), T (travel)"></a>type available value: A (animal), C (culture), N (nature), S (space), T (travel)</h1><p>background:<br>    purecolor: “#F5F5F5”</p>
+<pre><code>#bgimg: &quot;/img/bg.png&quot;
+bing:
+    enable: false
+    parameter:
+</code></pre><h1 id="Images-Settings"><a href="#Images-Settings" class="headerlink" title="Images Settings"></a>Images Settings</h1><p>img:<br>    logo: “/img/logo.png”<br>    avatar: “/img/avatar.png”<br>    daily_pic: “/img/daily_pic.png”<br>    sidebar_header: “/img/sidebar_header.png”<br>    random_thumbnail: “/img/random/material-“<br>    footer_image:</p>
+<pre><code>#upyun_logo:
+    #link: &quot;https://www.upyun.com/&quot;
+    #src: &quot;/img/upyun_logo.svg&quot;
+</code></pre><h1 id="Custom-Fonts"><a href="#Custom-Fonts" class="headerlink" title="Custom Fonts"></a>Custom Fonts</h1><h1 id="family-the-font-family-which-will-be-used-in-the-theme"><a href="#family-the-font-family-which-will-be-used-in-the-theme" class="headerlink" title="family: the font-family which will be used in the theme"></a>family: the font-family which will be used in the theme</h1><h1 id="host-uri-of-fonts-host"><a href="#host-uri-of-fonts-host" class="headerlink" title="host: uri of fonts host."></a>host: uri of fonts host.</h1><h1 id="Available-value-of-“host”-google-baomitu-ustc-custom"><a href="#Available-value-of-“host”-google-baomitu-ustc-custom" class="headerlink" title="Available value of “host”: google | baomitu | ustc | custom"></a>Available value of “host”: google | baomitu | ustc | custom</h1><p>fonts:<br>    family: Roboto, “Helvetica Neue”, Helvetica, “PingFang SC”, “Hiragino Sans GB”, “Microsoft YaHei”, “微软雅黑”, Arial, sans-serif<br>    use: google<br>    custom_font_host:</p>
+<h1 id="Card-Elevation-Level"><a href="#Card-Elevation-Level" class="headerlink" title="Card Elevation Level"></a>Card Elevation Level</h1><p>card_elevation: 2</p>
+<h1 id="Copyright"><a href="#Copyright" class="headerlink" title="Copyright"></a>Copyright</h1><h1 id="Specify-the-date-when-the-site-was-setup"><a href="#Specify-the-date-when-the-site-was-setup" class="headerlink" title="Specify the date when the site was setup."></a>Specify the date when the site was setup.</h1><h1 id="For-example-if-you-set-it-as-2015-then-footer-will-show-‘©-2015-2017’"><a href="#For-example-if-you-set-it-as-2015-then-footer-will-show-‘©-2015-2017’" class="headerlink" title="For example, if you set it as 2015, then footer will show ‘© 2015 - 2017’"></a>For example, if you set it as 2015, then footer will show ‘© 2015 - 2017’</h1><p>copyright_since:</p>
+<h1 id="Qrcode-for-redirect-at-other-device"><a href="#Qrcode-for-redirect-at-other-device" class="headerlink" title="Qrcode for redirect at other device"></a>Qrcode for redirect at other device</h1><h1 id="use-choose-which-method-to-generate-the-qrcode-for-each-posts"><a href="#use-choose-which-method-to-generate-the-qrcode-for-each-posts" class="headerlink" title="use: choose which method to generate the qrcode for each posts."></a>use: choose which method to generate the qrcode for each posts.</h1><h1 id="Available-value-of-“use”-plugin-online"><a href="#Available-value-of-“use”-plugin-online" class="headerlink" title="Available value of “use”: plugin | online"></a>Available value of “use”: plugin | online</h1><h1 id="When-use-“plugin”-you-need-to-install-the-hexo-helper-qrcode"><a href="#When-use-“plugin”-you-need-to-install-the-hexo-helper-qrcode" class="headerlink" title="- When use “plugin”, you need to install the hexo-helper-qrcode."></a>- When use “plugin”, you need to install the hexo-helper-qrcode.</h1><h1 id="When-use-“online”-the-qrcode-will-be-generated-by-‘pan-baidu-com’-in-China"><a href="#When-use-“online”-the-qrcode-will-be-generated-by-‘pan-baidu-com’-in-China" class="headerlink" title="- When use “online”, the qrcode will be generated by ‘pan.baidu.com’ in China."></a>- When use “online”, the qrcode will be generated by ‘pan.baidu.com’ in China.</h1><p>qrcode:<br>    enable: false<br>    use: plugin</p>
+<h1 id="—————————————————————-4"><a href="#—————————————————————-4" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Menu-Settings"><a href="#Menu-Settings" class="headerlink" title="Menu Settings"></a>Menu Settings</h1><h1 id="—————————————————————-5"><a href="#—————————————————————-5" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="TOC-Button"><a href="#TOC-Button" class="headerlink" title="TOC Button"></a>TOC Button</h1><p>toc:</p>
+<h1 id="use-choose-whether-the-line-number-of-toc-will-show-or-not"><a href="#use-choose-whether-the-line-number-of-toc-will-show-or-not" class="headerlink" title="use: choose whether the line_number of toc will show or not."></a>use: choose whether the line_number of toc will show or not.</h1><h1 id="Available-value-of-“linenumber”-true-false"><a href="#Available-value-of-“linenumber”-true-false" class="headerlink" title="Available value of “linenumber”: true | false"></a>Available value of “linenumber”: true | false</h1><pre><code>linenumber: true
+</code></pre><h1 id="SNS-Menu"><a href="#SNS-Menu" class="headerlink" title="SNS Menu"></a>SNS Menu</h1><p>sns:<br>    email: <a href="mailto:youremail@email.com" target="_blank" rel="noopener">youremail@email.com</a><br>    facebook: “<a href="https://www.facebook.com/facebook&quot;" target="_blank" rel="noopener">https://www.facebook.com/facebook&quot;</a><br>    twitter: “<a href="https://twitter.com/twitter&quot;" target="_blank" rel="noopener">https://twitter.com/twitter&quot;</a><br>    googleplus: “<a href="https://www.google.com/&quot;" target="_blank" rel="noopener">https://www.google.com/&quot;</a><br>    weibo:<br>    instagram:<br>    tumblr:<br>    github:<br>    linkedin:<br>    zhihu:<br>    bilibili:<br>    telegram:</p>
+<h1 id="SNS-Share-Switch"><a href="#SNS-Share-Switch" class="headerlink" title="SNS Share Switch"></a>SNS Share Switch</h1><p>sns_share:<br>    twitter: true<br>    facebook: true<br>    googleplus: true<br>    weibo: true<br>    linkedin: false<br>    qq: false<br>    telegram: false</p>
+<h1 id="Sidebar-Customize"><a href="#Sidebar-Customize" class="headerlink" title="Sidebar Customize"></a>Sidebar Customize</h1><p>sidebar:<br>    dropdown:<br>        Email Me:<br>            link: “#”<br>            icon: email<br>    homepage:<br>        use: true<br>        icon: home<br>        divider: false<br>    archives:<br>        use: true<br>        icon: inbox<br>        divider: false<br>    categories:<br>        use: false<br>        icon: chrome_reader_mode<br>        divider: false<br>    pages:</p>
+<pre><code>    #About:
+        #link: &quot;/about&quot;
+        #icon: person
+        #divider: false
+article_num:
+    use: false
+    divider: false
+footer:
+    divider: true
+    theme: true
+    support: false
+    feedback: false
+    material: false
+</code></pre><h1 id="—————————————————————-6"><a href="#—————————————————————-6" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="Integrated-Services"><a href="#Integrated-Services" class="headerlink" title="Integrated Services"></a>Integrated Services</h1><h1 id="—————————————————————-7"><a href="#—————————————————————-7" class="headerlink" title="—————————————————————"></a>—————————————————————</h1><h1 id="MaterialCDN"><a href="#MaterialCDN" class="headerlink" title="MaterialCDN"></a>MaterialCDN</h1><h1 id="When-you-set-‘use’-as-true-the-needed-css-js-font-file-will-have-a-new-src"><a href="#When-you-set-‘use’-as-true-the-needed-css-js-font-file-will-have-a-new-src" class="headerlink" title="When you set ‘use’ as true, the needed css, js, font file will have a new src."></a>When you set ‘use’ as true, the needed css, js, font file will have a new src.</h1><h1 id="The-new-src-will-have-the-base-domain-you-configured-in-‘base’"><a href="#The-new-src-will-have-the-base-domain-you-configured-in-‘base’" class="headerlink" title="The new src will have the base domain you configured in ‘base’."></a>The new src will have the base domain you configured in ‘base’.</h1><p>materialcdn:<br>    use:<br>    base: </p>
+<h1 id="Comment-Systems"><a href="#Comment-Systems" class="headerlink" title="Comment Systems"></a>Comment Systems</h1><h1 id="Available-value-of-“use”"><a href="#Available-value-of-“use”" class="headerlink" title="Available value of “use”:"></a>Available value of “use”:</h1><h1 id="disqus-disqus-click-changyan-163gentie"><a href="#disqus-disqus-click-changyan-163gentie" class="headerlink" title="disqus | disqus_click | changyan | 163gentie"></a>disqus | disqus_click | changyan | 163gentie</h1><p>comment:<br>    use:<br>    shortname: # duoshuo or disqus shortname<br>    changyan_appid:<br>    changyan_conf:<br>    changyan_thread_key_type: path<br>    gentie_productKey: </p>
+<h1 id="Search-Systems"><a href="#Search-Systems" class="headerlink" title="Search Systems"></a>Search Systems</h1><h1 id="Available-value"><a href="#Available-value" class="headerlink" title="Available value:"></a>Available value:</h1><h1 id="swiftype-google-local"><a href="#swiftype-google-local" class="headerlink" title="swiftype | google | local"></a>swiftype | google | local</h1><p>search:<br>    use: google<br>    swiftype_key:</p>
+<h1 id="Analytics-Systems"><a href="#Analytics-Systems" class="headerlink" title="Analytics Systems"></a>Analytics Systems</h1><h1 id="Available-value-1"><a href="#Available-value-1" class="headerlink" title="Available value:"></a>Available value:</h1><h1 id="baidu-google-cnzz"><a href="#baidu-google-cnzz" class="headerlink" title="baidu | google | cnzz"></a>baidu | google | cnzz</h1><p>analytics:<br>    use:<br>    site_id:</p>
+<h1 id="Leancloud-Views"><a href="#Leancloud-Views" class="headerlink" title="Leancloud Views"></a>Leancloud Views</h1><p>leancloud:<br>    enable: false<br>    app_id: #你的 app_id<br>    app_key: #你的 app_key<br>    av_core_mini: “<a href="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js&quot;" target="_blank" rel="noopener">https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js&quot;</a></p>
+<h1 id="Busuanzi-不蒜子-Views"><a href="#Busuanzi-不蒜子-Views" class="headerlink" title="Busuanzi 不蒜子 Views"></a>Busuanzi 不蒜子 Views</h1><p>busuanzi:<br>    enable: false<br>    all_site_uv: false<br>    post_pv: false<br>    busuanzi_pure_mini_js: “<a href="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;" target="_blank" rel="noopener">https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;</a></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/03/16/hello-world/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="未来de残像's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">3</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>残像的博客
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
